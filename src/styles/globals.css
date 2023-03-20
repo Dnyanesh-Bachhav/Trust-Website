@@ -1,0 +1,104 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFF;
+  /* position: fixed; */
+}
+.header-container
+{
+  position: fixed;
+  width: 100%;
+  background-color: #FFF;
+}
+ li {
+  float: left;
+  display: inline-flex;
+}
+li p{
+  margin-left: -10px;
+  justify-content: center;
+  align-items: center;
+  display: inline;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a:hover:not(.active) {
+  background-color: transparent;
+  color: #7E4555;
+}
+
+.active {
+  color: #7E4555;
+}
+.home-info{
+  background-image: url('../../assets/banners/banner1.jpg');
+  /* width: 1473px; */
+  height: 600px;
+  /* border: 1px solid black; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: contain;
+  display: flex;
+  /* align-self: center; */
+}
+.banner1-text{
+  display: block;
+  justify-content: center;
+  align-self: center;
+  width: 50%;
+  padding: 40px;
+}
+.banner1-text h1{
+  font-size: 52px;
+  color: #db4242;
+}
+.banner1-text blockquote{
+  color: #020202;
+  font-style: italic;
+  
+}
+/* Gallery */
+.gallery-title
+{
+  font-size: 52px;
+  display: flex;
+  justify-content: center;
+  color: #020202;  
+}
+.gallery-container{
+  width: 100%;
+  padding: 25px;
+}
+.image-container{
+  display: flex;
+  justify-content: space-between;
+}
+.findUsContainer{
+  width: 100%;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.location-container{
+  padding: 40px;
+}
+.findUsContainer p{
+  float: left;
+} 
+.mapImage{
+  display: inline;
+}
