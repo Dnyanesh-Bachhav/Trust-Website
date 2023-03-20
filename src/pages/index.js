@@ -12,6 +12,7 @@ export default function Home() {
 
     <Header/>
     <h1>Hello world...!!!</h1>
+    <p>It is paragraph</p>
     </div>
   )
 }
