@@ -2,7 +2,7 @@ function Header() {
     return (
         <div className="header-container">
             <ul className="header-ul">
-                <li><a class="active" href="#home">HOME</a><p>+</p></li>
+                <li><a className="active" href="#home">HOME</a><p>+</p></li>
                 <li><a href="#gallery">GALLERY</a><p>+</p></li>
                 <li><a href="#contact">EVENTS</a><p>+</p></li>
                 <li><a href="#contact">DAILY ROUTINE</a><p>+</p></li>

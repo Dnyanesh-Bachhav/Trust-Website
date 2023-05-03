@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <div>
+      <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </Head>
       <Header />
       <div className='home-info' id='home'>
         <div className='banner1-text'>

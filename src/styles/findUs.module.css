@@ -1,0 +1,10 @@
+.title{
+    color: blueviolet;
+    font-size: 29px;
+    font-weight: bold;
+}
+.social_media_link_container{
+    padding: 5;
+    margin-top: 20px;
+    display: inline-flex;
+}
