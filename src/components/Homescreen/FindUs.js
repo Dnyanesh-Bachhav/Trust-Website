@@ -3,8 +3,18 @@ import ngo_help from "../../../assets/banners/map.png";
 import styles from "../../styles/findUs.module.css";
 function FindUs() {
   return (
-    <div id="findus" className="mb-4">
-      <h1 className="section-title">Find Us</h1>
+    <div id="findus" className="mb-10">
+      <div className="title-container text-center mb-8">
+        <div className="text-center z-0 " style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}>
+          <h1 className="section-title text-center">Find Us</h1>
+        </div>
+        {/* <div className="border border-b-1 border-b-gray-400 w-full z-2"></div> */}
+        {/* <br /> */}
+      </div>
       <div className="findUsContainer">
         <div className="location-container">
           <h1 className={styles.title}>Reach Us At</h1>
@@ -27,17 +37,11 @@ function FindUs() {
             </div>
           </div>
         </div>
-        {/* <Image
-                    src={ngo_help}
-                    alt="Picture of the author"
-                    width={500}
-                    className={"mapImage"}
-                /> */}
 
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.340120277385!2d73.75609047514867!3d18.648727382469882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9faa4357807%3A0xbfc3f8b31bb9306b!2sNavshantiniketan%20Society!5e0!3m2!1sen!2sin!4v1683051755724!5m2!1sen!2sin"
-          width="600"
-          height="450"
+          width="800"
+          height="1000"
           style={{ border: "1px solid black" }}
           className="map-container border-8 border-gray-800"
           allowfullscreen=""

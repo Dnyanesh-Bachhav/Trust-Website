@@ -93,6 +93,7 @@ li a:hover:not(.active) {
 }
 .findUsContainer{
   width: 100%;
+  height: 100%;
   display: flex;
  justify-content: center;
  align-items: center;
@@ -114,5 +115,22 @@ li a:hover:not(.active) {
 .section-title{
   font-size: 34px;
   font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+  /* padding: 12px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 30px;
+  width: max-content;
+  align-self: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.title-container{
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  color: #db4242;
+  align-items: center;
 }
