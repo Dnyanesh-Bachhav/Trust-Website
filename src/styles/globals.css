@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body{
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -101,4 +105,14 @@ li a:hover:not(.active) {
 } 
 .mapImage{
   display: inline;
+}
+.map-container{
+  border: 0;
+  /* width: 200px; */
+  height: 250px;
+}
+.section-title{
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
 }
