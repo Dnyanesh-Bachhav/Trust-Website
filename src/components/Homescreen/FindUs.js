@@ -3,7 +3,7 @@ import ngo_help from "../../../assets/banners/map.png";
 import styles from "../../styles/findUs.module.css";
 function FindUs() {
   return (
-    <div id="findus" className="mb-10">
+    <div id="findus" className="mb-10 mt-10 ">
       <div className="title-container text-center mb-8">
         <div className="text-center z-0 " style={{
           display: "flex",
@@ -16,11 +16,17 @@ function FindUs() {
         {/* <br /> */}
       </div>
       <div className="findUsContainer">
-        <div className="location-container">
+        <div className="location-container mr-8">
           <h1 className={styles.title}>Reach Us At</h1>
-          <p>
-            c-34 navshantiniketan society, near friends corner, akurdi, pune
-          </p>
+          <h4>
+            c-34 navshantiniketan society,
+          </h4>
+          <h4>
+          near friends corner,
+          </h4>
+          <h4>
+          akurdi, pune
+          </h4>
           <br />
           <div className={styles.social_media_link_container}>
             <div className="drop-shadow-xl">
