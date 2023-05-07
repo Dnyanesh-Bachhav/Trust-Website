@@ -1,5 +1,6 @@
 import axios from "axios";
 import Image from "next/image";
+import Link from "next/link";
 
 function Header() {
     const handleSubmit = async (e)=>{
@@ -94,7 +95,7 @@ function Header() {
       </ul>
     </div>
       <div className="bg-[#db4242] p-2 rounded-lg ">
-        <a href="#" className="text-sm text-white font-bold font-sans ">Admin</a>
+        <Link href="/adminPanel" className="text-sm text-white font-bold font-sans ">Admin</Link>
       </div>
   </div>
 </nav>
