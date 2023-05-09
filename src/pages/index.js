@@ -10,9 +10,10 @@ import Events from '@/components/Homescreen/Events'
 
 // const inter = Inter({ subsets: ['latin'] })
 import dynamic from "next/dynamic";
+import Contact from '@/components/Homescreen/Contact'
 
 const Gallery = dynamic(() => import("../components/Homescreen/Gallery"), { ssr: false });
-export default function Home() {
+export default function Home(props) {
   return (
     <div>
       <Head>
@@ -30,7 +31,18 @@ export default function Home() {
       <Events/>
       <Gallery/>
       <FindUs/>
+      <Contact EMAIL_JS_SERVICE_ID={props.EMAIL_JS_SERVICE_ID} EMAIL_JS_TEMPLATE_ID={props.EMAIL_JS_TEMPLATE_ID} EMAIL_JS_PUBLIC_KEY={props.EMAIL_JS_PUBLIC_KEY}  />
       <Footer/>
     </div>
   )
+}
+
+export async function getServerSideProps(context) {
+  return {
+    props: {
+            EMAIL_JS_SERVICE_ID: process.env.EMAIL_JS_SERVICE_ID,
+            EMAIL_JS_TEMPLATE_ID: process.env.EMAIL_JS_TEMPLATE_ID,
+            EMAIL_JS_PUBLIC_KEY: process.env.EMAIL_JS_PUBLIC_KEY,
+  }
+}
 }

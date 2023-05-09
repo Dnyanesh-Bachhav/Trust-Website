@@ -1,3 +1,6 @@
+import Connect from "@/components/AdminPanel/Connect";
+import Navbar from "@/components/AdminPanel/Navbar";
+import Sidebar from "@/components/AdminPanel/Sidebar";
 import axios from "axios";
 import { useState } from "react";
 
@@ -39,15 +42,18 @@ function AdminPanel(){
         };
     }
     return(
-        <div className="container">
-            <h1>Admin Panel</h1>
+        <div>
+            {/* <h1>Admin Panel</h1>
             <input type="file" accept="image/*"
             onChange={convertToBase64}
             />
             {
                 image == "" || image == null ? "" : <img src={image} width={200} height={200}/>
             }
-            <button type="button" onClick={handleImage}>Submit</button>
+            <button type="button" onClick={handleImage}>Submit</button> */}
+            <Connect/>
+            {/* <Navbar /> */}
+    {/* <Sidebar /> */}
         </div>
     );
 }
