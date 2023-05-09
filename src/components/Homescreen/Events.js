@@ -3,7 +3,7 @@ import styles from "../../styles/events.module.css";
 import img1 from "../../../assets/event 1.jpg"
 function Events() {
   return (
-    <div className={ styles.container} >
+    <div className={ styles.container} id="events" >
         {/* title */}
       <div className="title-container text-center mt-8 mb-8 ">
         <div
