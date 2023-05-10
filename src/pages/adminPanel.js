@@ -52,7 +52,7 @@ function AdminPanel() {
             {
                 image == "" || image == null ? "" : <img src={image} width={200} height={200}/>
             }
-            <button type="button" onClick={handleImage} className="btn" >Submit</button>
+            <button type="button" onClick={handleImage} className="btn">Submit</button>
       {/* <Connect/> */}
       <Navbar />
       <Sidebar />
