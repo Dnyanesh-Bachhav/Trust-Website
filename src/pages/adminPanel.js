@@ -3,7 +3,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { ColorModeContext, useMode } from "./theme";
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { Box, CssBaseline, ThemeProvider } from "@mui/material";
 import Topbar from "@/components/global/Topbar";
 import Sidebar from "@/components/global/Sidebar";
 import Dashboard from "./admin/Dashboard";
@@ -66,11 +66,11 @@ function AdminPanel() {
       {/* <Connect/> */}
       {/* <Navbar /> */}
       <div className="app">
-            <Topbar setIsSidebar={setIsSidebar} />
-          <Sidebar isSidebar={isSidebar} />
-          <main className="content">
-            <Dashboard/>
-          </main>
+          <Topbar setIsSidebar={setIsSidebar} />
+            <Sidebar isSidebar={isSidebar} />
+            <Box className="content">
+              <Dashboard/>
+            </Box>
         </div>
       
     </ThemeProvider>

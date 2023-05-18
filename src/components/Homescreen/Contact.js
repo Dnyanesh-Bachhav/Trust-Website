@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { EMAIL, LOCATION, PHONE_NUMBER } from "./constants";
 import styles from "../../styles/contact.module.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact(props) {
   const form = useRef();
@@ -18,7 +20,8 @@ function Contact(props) {
       .then(
         (result) => {
           console.log("Result: " + result.text);
-           alert("Email send...");
+          //  alert("Email send...");
+          return toast.success("Email sent successfully!");
           // return <Toast/>
         },
         (error) => {
@@ -150,7 +153,7 @@ function Contact(props) {
         </form>
       </div>
       </div>
-
+      <ToastContainer />
     </section>
   );
 }

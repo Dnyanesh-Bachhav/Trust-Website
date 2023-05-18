@@ -282,7 +282,7 @@ function Routine() {
                   />
                 </a>
                 <div class="p-5">
-                  <p className="text-sm text-gray-500 font-bold" >Temple Opening</p>
+                  <p className="text-sm text-gray-500 font-bold">Temple Opening</p>
                   <a href="#">
                     <h6 class="mb-2 text-2xl font-bold tracking-tight text-[#db4242] dark:text-white">
                       Noteworthy technology
