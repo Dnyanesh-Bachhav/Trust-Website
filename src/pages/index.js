@@ -11,10 +11,18 @@ import Events from '@/components/Homescreen/Events'
 // const inter = Inter({ subsets: ['latin'] })
 import dynamic from "next/dynamic";
 import Contact from '@/components/Homescreen/Contact'
+import { ColorModeContext, useMode } from "../pages/theme";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import Routine from '@/components/Homescreen/Routine'
 
 const Gallery = dynamic(() => import("../components/Homescreen/Gallery"), { ssr: false });
 export default function Home(props) {
+  const [ theme, colorMode ] = useMode();
   return (
+    // <ColorModeContext.Provider value={colorMode}>
+      // <ThemeProvider theme={theme}>
+        // <CssBaseline/>
+
     <div>
       <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,11 +37,15 @@ export default function Home(props) {
         </div>
       </div>
       <Events/>
+      <Routine/>
       <Gallery/>
       <FindUs/>
       <Contact EMAIL_JS_SERVICE_ID={props.EMAIL_JS_SERVICE_ID} EMAIL_JS_TEMPLATE_ID={props.EMAIL_JS_TEMPLATE_ID} EMAIL_JS_PUBLIC_KEY={props.EMAIL_JS_PUBLIC_KEY}  />
       <Footer/>
     </div>
+    // </ThemeProvider>
+
+    // </ColorModeContext.Provider>
   )
 }
 
