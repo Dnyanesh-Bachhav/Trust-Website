@@ -68,9 +68,9 @@ function AdminPanel() {
       <div className="app">
           <Topbar setIsSidebar={setIsSidebar} />
             <Sidebar isSidebar={isSidebar} />
-            <Box className="content">
+            {/* <Box className="content">
               <Dashboard/>
-            </Box>
+            </Box> */}
         </div>
       
     </ThemeProvider>

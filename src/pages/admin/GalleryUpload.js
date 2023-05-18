@@ -48,7 +48,7 @@ function GalleryUpload(){
                         <input type="file" name="file" onChange={convertToBase64} className="z-20 opacity-0 cursor-pointer h-full w-full" />
                         <div className="absolute flex justify-center items-center gap-2">
                             <img className={`h-10 w-10 rounded-full ${ image != null ? 'opacity-1':'opacity-0'}`} src={image ? image : null} />
-                            <span className="text-[18px] text-gray-400 w-56 truncate">{ image != null ? name : 'choose a file'}</span>
+                            <span className="text-[18px] text-gray-400 w-56 truncate">{ image != null ? name : 'Choose a file'}</span>
                         </div>        
                     </div>
                     <button onClick={handleImage} className="w-full h-14 bg-green-600 text-white rounded-md">Upload</button>

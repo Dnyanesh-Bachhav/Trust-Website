@@ -71,7 +71,6 @@ const Sidebar = () => {
           color: "#6870fa !important",
         },
       }}
-      className="border border-gray-200"
     >
       
         <ProSidebar collapsed={isCollapsed}  >
@@ -103,7 +102,7 @@ const Sidebar = () => {
             </MenuItem>
 
             {!isCollapsed && (
-              <Box mb="25px" style={{ display: "inline-block" }}>
+              <Box mb="25px" ml="60px" style={{ display: "inline-block" }}>
                 <Box display="flex" justifyContent="center" alignItems="center">
                   <img
                     alt="profile-user"
@@ -222,22 +221,6 @@ const Sidebar = () => {
                 title="Pie Chart"
                 to="/pie"
                 icon={<PieChartOutlineOutlinedIcon />}
-                selected={selected}
-                setSelected={setSelected}
-                setComponentData={setComponentData}
-              />
-              <Item
-                title="Line Chart"
-                to="/line"
-                icon={<TimelineOutlinedIcon />}
-                selected={selected}
-                setSelected={setSelected}
-                setComponentData={setComponentData}
-              />
-              <Item
-                title="Geography Chart"
-                to="/geography"
-                icon={<MapOutlinedIcon />}
                 selected={selected}
                 setSelected={setSelected}
                 setComponentData={setComponentData}
